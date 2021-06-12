@@ -2,13 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
+    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IncomeFragment">
+    tools:context=".CostFragment">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/cardView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -36,7 +36,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
@@ -47,8 +47,8 @@
                     android:textColor="@color/black" />
 
                 <EditText
-                    android:id="@+id/pricebox"
-                    android:layout_width="271dp"
+                    android:id="@+id/boxprice"
+                    android:layout_width="274dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/edittextstyle"
@@ -60,13 +60,12 @@
                     android:hint="مبلغ"
                     android:inputType="number"
                     android:padding="20dp"
-                    android:textAlignment="textStart"
                     android:textColor="@color/black"
                     android:textColorHint="@color/shadow" />
             </LinearLayout>
 
             <EditText
-                android:id="@+id/groupingbox"
+                android:id="@+id/boxgrouping"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -79,12 +78,11 @@
                 android:hint="دسته بندی"
                 android:inputType="textPersonName"
                 android:padding="20dp"
-                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textColorHint="@color/shadow" />
 
             <EditText
-                android:id="@+id/accountbox"
+                android:id="@+id/boxaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -97,12 +95,11 @@
                 android:hint="نوع حساب"
                 android:inputType="textPersonName"
                 android:padding="20dp"
-                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textColorHint="@color/shadow" />
 
             <EditText
-                android:id="@+id/datebox"
+                android:id="@+id/boxdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -115,12 +112,11 @@
                 android:hint="تاریخ"
                 android:inputType="date"
                 android:padding="20dp"
-                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textColorHint="@color/shadow" />
 
             <EditText
-                android:id="@+id/discriptionbox"
+                android:id="@+id/boxdiscription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -133,41 +129,40 @@
                 android:hint="توضیحات"
                 android:inputType="textPersonName"
                 android:padding="20dp"
-                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textColorHint="@color/shadow" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btnsabtdaramad"
+        android:id="@+id/btnsabthazineh"
         android:layout_width="188dp"
         android:layout_height="53dp"
         android:background="@drawable/buttonstyle"
         android:fontFamily="@font/titr"
-        android:text="ثبت درآمد"
+        android:text="ثبت هزینه"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cardView3"
-        app:layout_constraintHorizontal_bias="0.267"
-        app:layout_constraintStart_toStartOf="@+id/cardView3"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3"
-        app:layout_constraintVertical_bias="0.696" />
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.7" />
 
     <Button
-        android:id="@+id/btnplasdaramad"
+        android:id="@+id/btnplashazineh"
         android:layout_width="50dp"
         android:layout_height="53dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:background="@drawable/buttonstyle"
         android:drawableLeft="@drawable/plustext"
-        android:drawablePadding="100dp"
+        android:drawablePadding="200dp"
         android:drawableTint="@color/white"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/btnsabtdaramad"
-        app:layout_constraintEnd_toEndOf="@+id/cardView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnsabtdaramad"
-        app:layout_constraintTop_toTopOf="@+id/btnsabtdaramad"
+        app:layout_constraintBottom_toBottomOf="@+id/btnsabthazineh"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/btnsabthazineh"
+        app:layout_constraintTop_toTopOf="@+id/btnsabthazineh"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
