@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/gozaresh"
+    android:title="گزارش"
+    android:tooltipText="گزارش"
+    android:icon="@drawable/report"
+    />
+    <item
+        android:id="@+id/bodje"
+        android:title="بودجه"
+        android:tooltipText="بودجه"
+        android:icon="@drawable/budget"
+        />
+    <item
+        android:id="@+id/daramad"
+        android:title="درآمد"
+        android:tooltipText="درآمد"
+        android:icon="@drawable/income"
+        />
+    <item
+        android:id="@+id/hazineh"
+        android:title="هزینه"
+        android:tooltipText="هزینه"
+        android:icon="@drawable/cost"
+        />
+</menu>
