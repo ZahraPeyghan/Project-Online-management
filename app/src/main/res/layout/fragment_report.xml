@@ -44,7 +44,7 @@
                 android:background="@color/purple" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/grouping"
+                android:id="@+id/transaction"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp" />
