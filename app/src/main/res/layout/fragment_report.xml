@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353">
+        app:layout_constraintVertical_bias="0.427">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                 android:background="@color/purple" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/transaction"
+                android:id="@+id/transaction_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp" />
