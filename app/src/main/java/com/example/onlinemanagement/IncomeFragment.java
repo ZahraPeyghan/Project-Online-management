@@ -48,12 +48,12 @@ public class IncomeFragment extends Fragment {
                 Income income =new Income(price,grouping,account,date,discription);
                 database
                         .collection("Income")
-                        .document(income)
-                        .set(income).addOnCompleteListener(new OnClickListener<Void>()
+                        .document()
+                        .set(income).addOnCompleteListener(new View.OnClickListener<Void>()
                 {
                     @Override
                     public void onComplete(@NonNull Task<Void> task){
-                        Toast.makeText(FragmentIncom.this,"درآمد شما ثبت شد",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(IncomeFragment.this,"درآمد شما ثبت شد",Toast.LENGTH_SHORT).show();
                     }
                 });
 

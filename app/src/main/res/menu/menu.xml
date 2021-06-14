@@ -7,12 +7,6 @@
     android:icon="@drawable/report"
     />
     <item
-        android:id="@+id/budget"
-        android:title="بودجه"
-        android:tooltipText="بودجه"
-        android:icon="@drawable/budget"
-        />
-    <item
         android:id="@+id/income"
         android:title="درآمد"
         android:tooltipText="درآمد"
