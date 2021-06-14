@@ -46,16 +46,16 @@ public class IncomeFragment extends Fragment {
                 date=binding.datebox.getText().toString();
                 discription=binding.discriptionbox.getText().toString();
                 Income income =new Income(price,grouping,account,date,discription);
-                database
-                        .collection("Income")
-                        .document()
-                        .set(income).addOnCompleteListener(new View.OnClickListener<Void>()
-                {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task){
-                        Toast.makeText(IncomeFragment.this,"درآمد شما ثبت شد",Toast.LENGTH_SHORT).show();
-                    }
-                });
+              //  database
+                   //     .collection("Income")
+                   //     .document()
+                    //    .set(income).addOnCompleteListener(new View.OnClickListener<Void>()
+              //  {
+              //      @Override
+                //    public void onComplete(@NonNull Task<Void> task){
+                  //      Toast.makeText(IncomeFragment.this,"درآمد شما ثبت شد",Toast.LENGTH_SHORT).show();
+                  //  }
+             //   });
 
             }
         });

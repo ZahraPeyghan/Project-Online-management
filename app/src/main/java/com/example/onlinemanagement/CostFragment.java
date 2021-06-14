@@ -44,16 +44,16 @@ public class CostFragment extends Fragment {
                 date=binding.boxdate.getText().toString();
                 discription=binding.boxdiscription.getText().toString();
                 Cost cost =new Cost(price,grouping,account,date,discription);
-                database
-                        .collection("Cost")
-                        .document()
-                        .set(cost).addOnCompleteListener(new View.OnClickListener<Void>()
-                {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task){
-                        Toast.makeText(IncomeFragment.this,"هزینه شما ثبت شد",Toast.LENGTH_SHORT).show();
-                    }
-                });
+               // database
+                     //   .collection("Cost")
+                     //   .document()
+                     //   .set(cost).addOnCompleteListener(new View.OnClickListener<Void>()
+              //  {
+              //      @Override
+                //    public void onComplete(@NonNull Task<Void> task){
+                  //      Toast.makeText(IncomeFragment.this,"هزینه شما ثبت شد",Toast.LENGTH_SHORT).show();
+                //    }
+              //  });
 
             }
         });
